@@ -78,7 +78,7 @@ p {
 
 .form {
     height: 40vh;
-    margin-top: 0px;
+    margin-top: 50px;
     -webkit-box-shadow: 0px 0px 3px 0px #000000; 
     box-shadow: 0px 0px 3px 0px #000000;
 }
@@ -174,4 +174,14 @@ a:hover {
 
 .error-border {
     border-color: red !important;
+}
+
+@media screen and (max-width: 767px) { 
+    .image {
+        display: none;
+    }
+
+    .form {
+        margin-top: 50px;
+    }
 }
