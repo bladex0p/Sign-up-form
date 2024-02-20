@@ -75,16 +75,20 @@
        const passwordTwo = document.getElementById('passwordTwo');
        const error = document.getElementById('error');
    
-       // Function to check if passwords match
+     
        function checkPasswordMatch() {
            if (passwordTwo.value !== passwordOne.value) {
                error.style.display = 'block';
+               passwordOne.classList.add('error-border');
+               passwordTwo.classList.add('error-border');
            } else {
                error.style.display = 'none';
+               passwordOne.classList.remove('error-border');
+               passwordTwo.classList.remove('error-border');
            }
        }
    
-       // Add event listeners to both password fields
+       
        passwordOne.addEventListener('input', checkPasswordMatch);
        passwordTwo.addEventListener('input', checkPasswordMatch);
     </script>
