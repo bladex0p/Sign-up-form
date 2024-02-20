@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="image">
+           <img src="imgs/pexels-gustavo-peres-2351676.jpg" alt="">
+           <div class="card-body">
+             <p class="card-paragraph">Welcome!</p>
+            </div>
+        </div>
+        <div class="details">
+            <div class="text">
+                <div class="lines">
+                    <p><strong>This is not a real online service! you know you need something like this in your life to help you realize your deepest dreams.</strong></p>
+                    <p><strong>Sign up now to get started.</strong></p>
+                    <p><strong>You know you want to.</strong></p>
+                </div>
+            </div>
+            <div class="form">
+                <form action="#" method="post">
+                    <h2>Lets Do this!</h2>
+                    <div class="fields">
+                        <div>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" maxlength="20" required>
+                        </div>
+                        <div>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name" maxlength="20" required>
+                        </div>
+                    </div>
+
+                    <div class="fields">
+                        <div>
+                            <label for="Email">EMAIL</label>
+                            <input type="email" name="Email" id="Email" maxlength="30" required>
+                        </div>
+                        <div>
+                            <label for="number">PHONE NUMBER</label>
+                            <input type="number" name="number" id="number" maxlength="20" required>
+                        </div>
+                    </div>
+                        
+                    <div class="fields">
+                        <div>
+                            <label for="passwordOne">PASSWORD</label>
+                            <input type="password" name="passwordOne" id="passwordOne" maxlength="20" minlength="8" required>
+                        </div>
+                        <div>
+                            <label for="passwordTwo" class="control-label">Confirm</label>
+                            <input name="passwordTwo" type="password" class="form-control" id="passwordTwo" required>
+                            <span class="label label-warning" id="error" style="display:none;">Passwords don't match</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        
+                <button type="submit">Create Account</button>
+            
+
+            <div class="already-user">
+                <p id="last-text">Already have an account ? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+       const passwordOne = document.getElementById('passwordOne');
+       const passwordTwo = document.getElementById('passwordTwo');
+       const error = document.getElementById('error');
+   
+       // Function to check if passwords match
+       function checkPasswordMatch() {
+           if (passwordTwo.value !== passwordOne.value) {
+               error.style.display = 'block';
+           } else {
+               error.style.display = 'none';
+           }
+       }
+   
+       // Add event listeners to both password fields
+       passwordOne.addEventListener('input', checkPasswordMatch);
+       passwordTwo.addEventListener('input', checkPasswordMatch);
+    </script>
+</body>
+</html>

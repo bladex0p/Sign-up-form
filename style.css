@@ -1,0 +1,173 @@
+
+
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#wrapper {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+}
+
+
+.image {
+   
+    flex: 1;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.card-body {
+    position: absolute;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    top: 8rem;
+    text-align: center;
+    font-size: 1.7em;
+    font-family: roboto;
+  }
+
+
+.details {
+    background-color: whitesmoke;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text, .form, .btn, .already-user {
+    width: 100%;
+}
+
+.text {
+    height: 20vh;
+    word-wrap: break-word;
+    position: relative;
+    top: -3rem;
+}
+
+.lines {
+    position: absolute;
+}
+
+.lines p:nth-child(3) {
+    margin-top: 40px;
+}
+
+p {
+    height: 100%;
+    overflow: hidden;
+    margin-left: 2em;
+    font-size: 1.2em;
+  }
+
+.form {
+    height: 40vh;
+    margin-top: 0px;
+    -webkit-box-shadow: 0px 0px 3px 0px #000000; 
+    box-shadow: 0px 0px 3px 0px #000000;
+}
+
+.btn {
+    height: 5vh;
+    margin: 5px 0px;
+}
+
+.already-user {
+    height: 5vh;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    border-radius: 5px;
+    width: 25vh;
+    height: 3vh;
+    border: 0.5px solid;
+}
+
+label {
+    font-size: 1.5vh;
+    padding-bottom: 0.5vh;
+    color: #1C2938;
+    font-family: "Roboto Mono", monospace;
+}
+
+h2 {
+    margin: 0;
+    padding: 2vh 8vh;
+}
+
+.fields {
+    display: flex;
+    padding: 0vh 4vh;
+}
+
+.fields div {
+    padding: 2vh 4vh;
+}
+
+
+
+button {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 17vh;
+    height: 5vh;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: self-start;
+    background-color: #9CA860;
+    border: 1.5px solid;
+    color: #DEDAD7;
+}
+
+button:hover {
+    background-color: #6D8456;
+    color: #DEDAD7;
+}
+
+#last-text {
+    margin-left: 1.5rem;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #9CA860;
+}
+
+a:hover {
+    color: #6D8456;
+}
+
+#error {
+    color: red;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.5vh;
+}
